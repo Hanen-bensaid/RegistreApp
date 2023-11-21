@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,16 +19,35 @@
   </header>
   <main>
 <div class="container">
+  <form onsubmit="event.preventDefault();">
     <div class="row">
-        <form>
-            <h4>RegistreApp</h4>
+            <h4 class="titre">RegistreApp</h4>
             <div class="col-6">
-                <input class="form control nom" type="text" placeholder="Nom">
-                <button type="submit" class="btn btn-success submit">Registre</button>
+                <input class="form-control nom" type="text" placeholder="Nom">
+                <span class="error1"></span>
             </div>
-        </form>
-    </div>
+            <div class="col-6">
+              <input class="form-control email" type="email" placeholder="email">
+              <span class="error2"></span>
+          </div>
+          <div class="col-6">
+            <input class="form-control password" type="password" placeholder="password">
+            <span class="error3"></span>
+        </div>
+        <div class="col-6">
+          <input class="form-control conPass" type="password" placeholder="confirmation de mot de pass">
+          <span class="error4"></span>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success submit">Registre</button>  
+      </div>
+      
 </div>
+</form>
+</div>
+    
+    
+
   </main>
   <footer>
     <!-- place footer here -->
